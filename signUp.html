@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>Login Form </title>
+    <style>
+        .signUp {
+            width: 300px;
+            margin: 0 auto;
+            font-family: Tahoma, Geneva, sans-serif;
+        }
+        .signUp h1 {
+            text-align: center;
+            color: #b3e5fc;
+            font-size: 24px;
+            padding: 20px 0 20px 0;
+        }
+        .signUp input[type="password"],
+        .signUp input[type="text"] {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #dddddd;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+        .signUp input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            background-color: #f44336;
+            border: 0;
+            box-sizing: border-box;
+            cursor: pointer;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .box {
+            margin-top: 35px;
+            padding: 20px;
+            background-color: #3f51b5;
+        }
+        a{
+            color: #b3e5fc;
+            text-decoration: none
+        }
+        body {
+			background-image: linear-gradient(to bottom right, #6200ea, #9c27b0);
+		}
+    </style>
+</head>
+
+<body>
+    <div class="signUp box">
+        <h1>SignUp</h1>
+        <form action="register"  method="POST">
+            <input type="text" name="username" placeholder="Enter Username: " required>
+            <input type="text" name="firstname" placeholder="Enter First name: " required>
+            <input type="text" name="lastname" placeholder="Enter Last name: " required>
+            <input type="password" name="password" placeholder="Enter Password: " required>
+            <input type="password" name="rePassword" placeholder="Re-Enter Password: " required>
+            <input type="text" name="email" placeholder="Enter EmailID: " required>
+            <input type="submit">
+        </form>
+        <!-- <a href="/signUp" method="get">
+            <center>Back</center>
+        </a> -->
+    </div>
+</body>
+
+</html>

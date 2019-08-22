@@ -1,0 +1,82 @@
+<html>
+
+<head>
+	<title>Login Form </title>
+	<style>
+		.login-form {
+			width: 300px;
+			margin: 0 auto;
+			font-family: Tahoma, Geneva, sans-serif;
+		}
+		.login-form h1 {
+			text-align: center;
+			color: #b3e5fc;
+			font-size: 24px;
+			padding: 20px 0 20px 0;
+		}
+		.login-form input[type="password"],
+		.login-form input[type="text"] {
+			width: 100%;
+			padding: 15px;
+			border: 1px solid #dddddd;
+			margin-bottom: 15px;
+			box-sizing: border-box;
+		}
+		.login-form input[type="submit"] {
+			margin-top: 10px;
+			width: 100%;
+			padding: 15px;
+			background-color: #f44336;
+			border: 0;
+			box-sizing: border-box;
+			cursor: pointer;
+			font-weight: bold;
+			color: #ffffff;
+		}
+		.login-form input[type="checkbox"] {
+			margin-left: 75px;
+		}
+		a {
+			text-decoration: none;
+			color: #ffea00;
+		}
+		.box {
+			margin-top: 150px;
+			padding: 20px;
+			background-color: #3f51b5;
+		}
+		body {
+			background-image: linear-gradient(to bottom right, #6200ea, #9c27b0);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="login-form box">
+		<h1>Login</h1>
+		<form action="auth" method="POST">
+			<input type="text" name="username" placeholder="Username" required>
+			<input type="password" name="password" id="pass" placeholder="Password" required>
+			<input type="checkbox" onclick="myFunction()">Show Password
+			<br>
+			<input type="submit">
+		</form>
+		<h5>
+			<a href="/signUp" method="get">
+				<center>Sign Up</center>
+			</a>
+		</h5>
+	</div>
+</body>
+<script>
+	function myFunction() {
+		var x = document.getElementById("pass");
+		if (x.type === "password") {
+			x.type = "text";
+		} else {
+			x.type = "password";
+		}
+	}
+</script>
+<!-- <script src="index.js"></script> -->
+</html>
